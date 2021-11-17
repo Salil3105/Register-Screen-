@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Registeration-Screen",
+    "slug": "Registeration-Screen",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Registeration-Screen"
+}
