@@ -28,14 +28,6 @@ export default function SignUp() {
             {/* Bottom View  */}
             <View style={style.bottomView}>
 
-                {/* <View style={{ padding: 40 }} >
-                    <Text style={{ color: '#4632A1', fontSize: 34 }}> Welcome </Text>
-                    <Text>
-                        Don't have an account ?
-                        <Text style={{ color: 'red', fontStyle: 'italic', paddingLeft: 10, }}>{''}Register Now</Text>
-                    </Text>
-                </View> */}
-
                 {/* Form Inputs  */}
                 <View style={{ marginTop: 50, marginLeft: 40, }}>
                     {/* <TextInput placeholder='Email id' style={style.inputs} value={text} onChangeText={() => { setText(text) }} textContentType='emailAddress' /> */}
@@ -57,6 +49,7 @@ export default function SignUp() {
                         value={text}
                         onChangeText={text => setText(text)}
                     />
+
                     <Input
                         color="black"
                         placeholder="Password "
