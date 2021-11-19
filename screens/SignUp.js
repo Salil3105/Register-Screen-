@@ -32,7 +32,7 @@ export default function SignUp() {
             <View style={style.bottomView}>
 
                 {/* Form Inputs  */}
-                <View style={{ marginTop: 130, marginLeft: 40, marginBottom: 325, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}>
+                <View style={{ marginTop: 70, marginLeft: 20, marginBottom: 325, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}>
                     {/* <TextInput placeholder='Email id' style={style.inputs} value={text} onChangeText={() => { setText(text) }} textContentType='emailAddress' /> */}
 
                     <Input
