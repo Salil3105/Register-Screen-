@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Item, Label, TextInput, View, ScrollView, Text, StyleSheet, ImageBackground, Dimensions } from 'react-native'
 import { Input, Button, } from 'react-native-elements';
 
+
 export default function SignUp() {
 
     const [text, setText] = useState()
+    const [firstName, setFirstName] = useState()
+    const [lastName, setLastname] = useState()
     const [password, setPassword] = useState()
     const [fullname, setFullName] = useState()
     return (
@@ -29,17 +32,27 @@ export default function SignUp() {
             <View style={style.bottomView}>
 
                 {/* Form Inputs  */}
-                <View style={{ marginTop: 50, marginLeft: 40, marginBottom: 325, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}>
+                <View style={{ marginTop: 130, marginLeft: 40, marginBottom: 325, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}>
                     {/* <TextInput placeholder='Email id' style={style.inputs} value={text} onChangeText={() => { setText(text) }} textContentType='emailAddress' /> */}
 
                     <Input
                         color="black"
                         autoFocus
                         type='text'
-                        placeholder="Full Name"
-                        value={fullname}
-                        onChangeText={fullname => setFullName(fullname)}
+                        placeholder="First Name"
+                        value={firstName}
+                        onChangeText={firstName => setFirstName(firstName)}
                     />
+                    <Input
+                        color="black"
+                        autoFocus
+                        type='text'
+                        placeholder="Last Name"
+                        value={lastName}
+                        onChangeText={lastName => setLastname(lastName)}
+                    />
+
+
 
                     <Input
                         color="black"
@@ -62,10 +75,12 @@ export default function SignUp() {
 
                     <Button
                         containerStyle={style.button}
+
                         raised
                         // onPress={register}
                         title="Register"
                     />
+
                 </View>
             </View>
         </ScrollView>
