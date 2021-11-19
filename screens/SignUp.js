@@ -42,6 +42,15 @@ export default function SignUp() {
 
                     <Input
                         color="black"
+                        autoFocus
+                        type='text'
+                        placeholder="Full Name"
+                        value={fullname}
+                        onChangeText={fullname => setFullName(fullname)}
+                    />
+
+                    <Input
+                        color="black"
                         placeholder="Email id "
                         autoFocus
                         type="email"
@@ -57,14 +66,7 @@ export default function SignUp() {
                         value={password}
                         onChangeText={password => setPassword(password)}
                     />
-                    <Input
-                        color="black"
-                        autoFocus
-                        type='text'
-                        placeholder="Full Name"
-                        value={fullname}
-                        onChangeText={fullname => setFullName(fullname)}
-                    />
+
                     <Button
                         containerStyle={style.button}
                         raised
@@ -79,7 +81,7 @@ export default function SignUp() {
 
 const style = StyleSheet.create({
     brandView: {
-        flex: 1,
+        flex: 5,
         justifyContent: 'center',
         alignItems: 'center',
     },
